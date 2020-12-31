@@ -21,7 +21,7 @@
   - mv [src] [dst] / sudo chmod 400 your.pem
 
 1. Build hello world
-  - GOOS=linux GOARCH=amd64 go build
+  - GOOS=linux GOARCH=amd64 go build -o [BINARY_NAME]
 
 1. Copy your binary to the sever
   - scp -i /path/to/[your].pem ./main ec2-user@[public-DNS]:

@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", index)
-	http.ListenAndServe(":80", nil)
+	http.ListenAndServe(":8080", nil)
 }
 
 func index(w http.ResponseWriter, req *http.Request) {
